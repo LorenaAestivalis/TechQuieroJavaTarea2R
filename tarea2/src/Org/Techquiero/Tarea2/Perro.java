@@ -3,13 +3,22 @@ package Org.Techquiero.Tarea2;
 public class Perro extends Animal {
 	private String raza;
 	private Double  longitud;
-	private  boolean genero;
+	private  String genero;
 	private int edad;
-	public String getRaza() {
-		return raza;
-	}
+	
+	
+	
 	public void setRaza(String raza) {
 		this.raza = raza;
+	}
+	public int getEdad() {
+		return edad;
+	}
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+	public String getRaza() {
+		return raza;
 	}
 	public Double getLongitud() {
 		return longitud;
@@ -17,17 +26,18 @@ public class Perro extends Animal {
 	public void setLongitud(Double longitud) {
 		this.longitud = longitud;
 	}
-	public boolean isGenero() {
+	
+	
+	
+	public String getGenero() {
 		return genero;
 	}
-	public void setGenero(boolean genero) {
+	public void setGenero(String genero) {
 		this.genero = genero;
 	}
-	
-	
 	@Override
 	public String toString() {
-		return "Perro[nombre="+this.getNombre()+ ", edad=" +edad+ ", raza" +raza+"longitd" +longitud+"]";
+		return " [nombre="+this.getNombre()+ ", edad=" +edad+ ", raza=" +raza+", longitd=" +longitud+"]";
 		
 		
 	}
